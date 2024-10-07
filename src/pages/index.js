@@ -1,25 +1,23 @@
 import Footer from "./component/footer";
 import Navbar from "./component/navbar";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-function Index() {
+import {Container, Row, Col} from 'react-bootstrap';
+
+export default function Index() {
   return <div>
 
     <Navbar />
     <Container>
       <Row>
-        <Col>1 of 2</Col>
-        <Col>2 of 2</Col>
+        <Col className="bg-info-subtle">1 of 2</Col>
+        <Col className="bg-info-subtle">2 of 2</Col>
       </Row>
       <Row>
-        <Col>1 of 3</Col>
-        <Col>2 of 3</Col>
-        <Col>3 of 3</Col>
+        <Col className="bg-info-subtle">1 of 3</Col>
+        <Col className="bg-info-subtle">2 of 3</Col>
+        <Col className="bg-info-subtle">3 of 3</Col>
       </Row>
     </Container>
     <Footer />
   </div>;
 
 }
-export default Index; 

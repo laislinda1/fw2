@@ -1,11 +1,12 @@
 import {Container, Nav, Navbar} from 'react-bootstrap';
-
+import styles from "@/styles/Navbar.module.css"
 
 export default function Menu() {
   return (
-    <Navbar expand="sn" className="grad" >
-      <Container>
-        <Navbar.Brand href="/">Lais Linda</Navbar.Brand>
+    <Container>
+    <Navbar expand="sm" className={`${styles.navGradiente} px-3 my-3 border-3 border border-success rounded rounded-3`}  >
+     
+        <Navbar.Brand href="/">Laís Linda</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -13,8 +14,8 @@ export default function Menu() {
             <Nav.Link href="#link">Link</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
     </Navbar>
+    </Container>
   );
 }
 

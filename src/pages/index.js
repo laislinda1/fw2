@@ -1,12 +1,12 @@
 import Footer from "./component/footer";
-import Navbar from "./component/navbar";
+import Menu from "./component/navbar";
 import {Container, Row, Col} from 'react-bootstrap';
 
 export default function Index() {
   return <div>
 
-    <Navbar />
-    <Container>
+    <Menu/>
+    <Container className="px-4 my-3">
       <Row>
         <Col className="bg-info-subtle">1 of 2</Col>
         <Col className="bg-info-subtle">2 of 2</Col>

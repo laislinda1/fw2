@@ -11,7 +11,7 @@ export default function Promessa(){
     return <>
     <Menu/>
     <Container>
-        Promessa {prometido=="" ?"<carregando>" : prometido}
+        Promessa {prometido=="" ? <img src="./Pacman Loader.gif" width={200} height={80}/> : prometido}
     </Container>
     <Footer />
     </>

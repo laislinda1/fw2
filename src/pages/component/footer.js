@@ -1,6 +1,6 @@
 import { Container }  from "react-bootstrap"
 import styles from "@/styles/Footer.module.css"
-export default function footer() {
+export default function Footer() {
     return (
         <>
     <Container>

@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
 import Menu from "./component/navbar";
 import Footer from "./component/footer";
 
@@ -8,8 +8,29 @@ export default function Mesportes() {
             <Container className ="text-center rounded-pill border border-pimary">
             Produtos de esportes
             </Container>
-            dados
-            <Footer />
+            <Container>
+            <Table striped bordered hover>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Produto</th>
+          <th>Categoria</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        </tbody>
+        </Table>
+        </Container>
+   <Footer />
         </>
     
 }
